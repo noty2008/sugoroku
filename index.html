@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>すごろく</title>
+<meta charset="UTF-8">
+<script src="main.js"></script>
+<link rel="stylesheet" href="style.css">
+ <link
+      href="https://fonts.googleapis.com/earlyaccess/nicomoji.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css"
+      rel="stylesheet"
+    />
+    <meta name="description" content="すごろく" />
+    <meta property="og:title" content="すごろく" />
+    <meta property="og:url" content="https://noty2008.github.io/sugoroku/" />
+    <meta
+      property="og:description"
+      content="しょぼいすごろくゲーム"
+    />
+    <meta property="og:type" content="website" />
+</head>
+<body>
+<h1><strong>すごろく</strong></h1>
+<ul>
+<li>残り回数までに「あがり」に止まればゲームクリアです。</li>
+<li>「あがり」には丁度でないと止まれません。</li>
+<li>サイコロの目は１～６が出ます。</li>
+</ul>
+<hr>
+<div style="display:none;">
+	<div id="piece" style="position:absolute;" >
+		<img style="position:relative;" src="piece.png">
+	</div>
+	<div id="cell" style="position:absolute;" >
+		<img style="position:relative;" src="cell.png">
+	</div>
+	<div id="goal" style="position:absolute;" >
+		<img style="position:relative;" src="goal.png">
+	</div>
+	<div id="goal_piece" style="position:absolute;" >
+		<img style="position:relative;" src="goal_piece.png">
+	</div>
+</div>
+<div style="position:relative;" id="status"></div>
+<div style="position:relative;" id="board"></div>
+<form id="button" action="#" style="position:relative; top:50px">
+<input type="button" value="サイコロを振る" onclick="CastDice();">
+</form>
+</body>
+</html>
